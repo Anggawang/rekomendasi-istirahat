@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halodoc - Rincian Rekomendasi Istirahat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #3a8ffe 0%, #1e5dc4 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        .header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e5dc4;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e6f2ff;
+        }
+        
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .info-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .info-table tr:last-child {
+            border-bottom: none;
+        }
+        
+        .info-table td {
+            padding: 15px 10px;
+            font-size: 16px;
+        }
+        
+        .info-table td:first-child {
+            font-weight: 600;
+            color: #555;
+            width: 40%;
+        }
+        
+        .info-table td:last-child {
+            color: #333;
+        }
+        
+        .date-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            background-color: #f8fbff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3a8ffe;
+        }
+        
+        .date-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .date-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .date-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e5dc4;
+        }
+        
+        .footer {
+            background-color: #f8fbff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        .doctor-signature {
+            margin-top: 30px;
+            text-align: right;
+            padding-top: 20px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .doctor-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e5dc4;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            
+            .info-table td {
+                padding: 12px 5px;
+                font-size: 15px;
+            }
+            
+            .date-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .date-item {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Halodoc</span>
+            </div>
+            <h1>Rincian Rekomendasi Istirahat</h1>
+            <p>Dokumen medis resmi untuk rekomendasi istirahat pasien</p>
+        </div>
+        
+        <div class="content">
+            <h2 class="section-title">Informasi Pasien</h2>
+            
+            <table class="info-table">
+                <tr>
+                    <td>Nama Pasien</td>
+                    <td>Angga Adi Purwandi</td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>11 Agustus 1996</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <td>Nama Dokter</td>
+                    <td>Hany Margen</td>
+                </tr>
+                <tr>
+                    <td>Tanggal Konsultasi</td>
+                    <td>02 Desember 2025</td>
+                </tr>
+            </table>
+            
+            <h2 class="section-title">Periode Istirahat</h2>
+            
+            <div class="date-info">
+                <div class="date-item">
+                    <div class="date-label">Istirahat Mulai</div>
+                    <div class="date-value">02 Desember 2025</div>
+                </div>
+                <div class="date-item">
+                    <div class="date-label">Hingga</div>
+                    <div class="date-value">02 Desember 2025</div>
+                </div>
+                <div class="date-item">
+                    <div class="date-label">Durasi</div>
+                    <div class="date-value">1 Hari</div>
+                </div>
+            </div>
+            
+            <div class="doctor-signature">
+                <div class="date-label">Dokter Penanggung Jawab</div>
+                <div class="doctor-name">dr. Hany Margen</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Dokumen ini dicetak secara elektronik. Tidak memerlukan tanda tangan basah.</p>
+            <p>© 2025 Halodoc. Semua hak dilindungi undang-undang.</p>
+        </div>
+    </div>
+
+    <script>
+        // Menambahkan interaksi sederhana
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menambahkan efek hover pada tabel
+            const tableRows = document.querySelectorAll('.info-table tr');
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = '#f8fbff';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'transparent';
+                });
+            });
+            
+            // Menampilkan alert saat header diklik
+            const header = document.querySelector('.header');
+            header.addEventListener('click', function() {
+                alert('Halodoc - Layanan Kesehatan Online Terpercaya');
+            });
+        });
+    </script>
+</body>
+</html>
